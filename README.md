@@ -1,4 +1,6 @@
 # m5stack-playlist
+![](https://raw.githubusercontent.com/louiscklaw/m5stack-playlist/master/docs/helloworld.png)
+
 m5stack-playlist
 
 ### hardware
