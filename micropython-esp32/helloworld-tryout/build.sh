@@ -27,12 +27,12 @@ cd $PROJ_HOME
 
   scripts/2_build_the_firmware.sh
 
-  # # sync my code before generate fs image
-  # rsync -avzh \
-  #   $SRC_DIR/*.py \
-  #   $FS_IMG_DIR
+  # sync my code before generate fs image
+  rsync -avzh \
+    $SRC_DIR/*.py \
+    $FS_IMG_DIR
 
-  # scripts/3_flash_the_file_system_image.sh
+  scripts/3_flash_the_file_system_image.sh
 
-  # # download done, backup the active sdkconfig file
-  # cp $ACTIVE_SDKCONFIG $SRC_DIR/sdkconfig
+  # download done, backup the active sdkconfig file
+  cp $ACTIVE_SDKCONFIG $SRC_DIR/sdkconfig
