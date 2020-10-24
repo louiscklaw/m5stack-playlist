@@ -1,10 +1,17 @@
+---
+slug: "/m5stack-playlist"
+date: "2020-10-24"
+title: "my m5stack playlist"
+tags: ["m5stack","esp32","micropython"]
+---
+
 # m5stack-playlist
 ![](https://raw.githubusercontent.com/louiscklaw/m5stack-playlist/master/docs/helloworld.png)
 
 m5stack-playlist
 
 ### hardware
-display: 320 x 240 pixels
+- display: 320 x 240 pixels
 
 
 ### arduino ide
