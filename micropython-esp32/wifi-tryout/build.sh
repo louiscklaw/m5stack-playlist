@@ -2,16 +2,37 @@
 
 set -ex
 
-IMG_DIR=$MICRO_PYTHON_BUILD_DIR/components/internalfs_image/image
+SRC_DIR=$PWD
 
-$MICRO_PYTHON_BUILD_DIR/BUILD.sh makefs
+# IMG_DIR=$MICRO_PYTHON_BUILD_DIR/components/internalfs_image/image
 
-rsync -avzh \
-$PWD/*.py \
-$IMG_DIR
+# cd $MICRO_PYTHON_BUILD_DIR
+#   ./BUILD.sh makefs
+# cd -
 
-# flash to device
-$PROJ_HOME/scripts/erase.sh
-$PWD/../spiffs_image-tryout/test.sh
+# rsync -avzh \
+# $PWD/*.py \
+# $IMG_DIR
 
-code $PWD/main.py
+# # flash to device
+# $PWD/../spiffs_image-tryout/test.sh
+
+# code $PWD/main.py
+
+cd $PROJ_HOME
+  scripts/0_clean.sh
+
+  # cp $SRC_DIR/sdkconfig $ACTIVE_SDKCONFIG
+  # scripts/1_menuconfig.sh
+
+  scripts/2_build_the_firmware.sh
+
+  # sync my code before generate fs image
+  rsync -avzh \
+    $SRC_DIR/*.py \
+    $FS_IMG_DIR
+
+  scripts/3_flash_the_file_system_image.sh
+
+  # download done, backup the active sdkconfig file
+  cp $ACTIVE_SDKCONFIG $SRC_DIR/sdkconfig
