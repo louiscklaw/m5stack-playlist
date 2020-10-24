@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-
 set -ex
 
 cd $MICRO_PYTHON_BUILD_DIR
-  ./BUILD.sh flashlfsfs
 
-cd -
+  git clean -dfx
+
+  # ./BUILD.sh clean

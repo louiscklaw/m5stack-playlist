@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 
-
 set -ex
 
 cd $MICRO_PYTHON_BUILD_DIR
-  ./BUILD.sh flashlfsfs
-
-cd -
+  echo './BUILD.sh menuconfig'
+  ./BUILD.sh menuconfig

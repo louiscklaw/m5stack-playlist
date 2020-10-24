@@ -1,0 +1,6 @@
+[submodule "_ref/M5Stack"]
+	path = _ref/M5Stack
+	url = https://github.com/m5stack/M5Stack.git
+[submodule "_ref/M5Stack_MicroPython"]
+	path = _ref/M5Stack_MicroPython
+	url = https://github.com/m5stack/M5Stack_MicroPython.git

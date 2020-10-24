@@ -44,8 +44,11 @@ manage library
 - connect usb to computer
 - check port generated (e.g. /dev/ttyUSB0)
 - on project home, scripts/erase.sh
+
+
+### Logs:
+
 ```
-m5stack-playlist on  develop [!?]
 ➜ scripts/erase.sh
 + cd _ref/esptool-2.8
 + ./esptool.py --port /dev/ttyUSB0 erase_flash
@@ -65,3 +68,57 @@ Chip erase completed successfully in 13.5s
 Hard resetting via RTS pin...
 + cd ../..
 ```
+
+```
+➜ ./BUILD.sh flash
+
+---------------------
+MicroPython for ESP32
+---------------------
+
+=========================================
+Flashing MicroPython firmware to ESP32...
+=========================================
+Building partitions from /home/logic/_workspace/m5stack-playlist/micropython-esp32/_firmware/MicroPython_BUILD/partitions_mpy.csv...
+Flashing binaries to serial port /dev/ttyUSB0 (app at offset 0x10000 )...
+esptool.py v2.5.0
+Serial port /dev/ttyUSB0
+Connecting.....
+Chip is ESP32D0WDQ6 (revision 1)
+Features: WiFi, BT, Dual Core
+MAC: 30:ae:a4:4f:a3:20
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 921600
+Changed.
+Configuring flash size...
+Auto-detected Flash size: 4MB
+Compressed 19408 bytes to 11547...
+Wrote 19408 bytes (11547 compressed) at 0x00001000 in 0.2 seconds (effective 1010.4 kbit/s)...
+Hash of data verified.
+Compressed 144 bytes to 69...
+Wrote 144 bytes (69 compressed) at 0x0000f000 in 0.0 seconds (effective 531.8 kbit/s)...
+Hash of data verified.
+Compressed 1443456 bytes to 876077...
+Wrote 1443456 bytes (876077 compressed) at 0x00010000 in 12.0 seconds (effective 959.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 128...
+Wrote 3072 bytes (128 compressed) at 0x00008000 in 0.0 seconds (effective 9241.5 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Staying in bootloader.
+OK.
+```
+
+### to run helloworld example:
+```
+# manually reset module
+
+cd /home/logic/_workspace/m5stack-playlist/micropython-esp32/helloworld-tryout
+  ./build.sh
+
+
+### TODO:
+  - speaker not working

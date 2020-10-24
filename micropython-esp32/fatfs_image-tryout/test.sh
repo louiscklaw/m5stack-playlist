@@ -3,7 +3,7 @@
 
 set -ex
 
-cd micropython-esp32/_firmware/MicroPython_BUILD
+cd $MICRO_PYTHON_BUILD_DIR
   ./BUILD.sh flashfatfs
 
 cd -
