@@ -1,6 +1,3 @@
-from m5stack import lcd
-
-lcd.print('hello world!\n')
 
 import machine, network, utime
 
@@ -18,10 +15,6 @@ while not sta_if.isconnected():
     if tmo == 0:
         sta_if.disconnect()
         break
-
-lcd.print('ip address: ')
-lcd.print(sta_if.ifconfig()[0])
-lcd.print('\n')
 
 if tmo > 0:
     lcd.print("WiFi started...\n")
