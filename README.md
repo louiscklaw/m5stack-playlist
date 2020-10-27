@@ -118,7 +118,21 @@ OK.
 
 cd /home/logic/_workspace/m5stack-playlist/micropython-esp32/helloworld-tryout
   ./build.sh
-
+```
 
 ### TODO:
-  - speaker not working
+  - [*] helloworld
+  - [] LCD
+  - []  Button
+  - []  SD Card
+  - []  Speaker
+  - []  GPIO
+  - []  PWM
+  - []  ADC
+  - []  DAC
+  - []  I2C
+  - []  SPI
+  - []  UART
+  - []  Timer
+  - []  Neopixel
+  - []  RTC

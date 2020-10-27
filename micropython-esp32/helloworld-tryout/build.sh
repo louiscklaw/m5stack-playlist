@@ -33,6 +33,7 @@ cd $PROJ_HOME
     $FS_IMG_DIR
 
   scripts/3_flash_the_file_system_image.sh
+  scripts/4_flash_the_firmware.sh
 
   # download done, backup the active sdkconfig file
   cp $ACTIVE_SDKCONFIG $SRC_DIR/sdkconfig
