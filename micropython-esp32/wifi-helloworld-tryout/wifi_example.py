@@ -35,7 +35,5 @@ if tmo > 0:
         utime.strftime("%c")
         lcd.print("")
 
-
-
 def helloworld_wifi():
   lcd.print('helloworld wifi')
