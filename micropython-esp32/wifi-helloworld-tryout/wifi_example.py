@@ -1,9 +1,5 @@
 from m5stack import lcd
-
 import machine, network, utime
-
-
-
 
 lcd.print("")
 lcd.print("Starting WiFi ...")
