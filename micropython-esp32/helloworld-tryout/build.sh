@@ -37,3 +37,5 @@ cd $PROJ_HOME
 
   # download done, backup the active sdkconfig file
   cp $ACTIVE_SDKCONFIG $SRC_DIR/sdkconfig
+
+  /home/logic/.local/bin/esptool.py run
