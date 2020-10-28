@@ -28,9 +28,9 @@ cd $PROJ_HOME
   # scripts/1_menuconfig.sh
 
   # restore sdkconfig
-  cp  \
-    $SRC_DIR/sdkconfig \
-    $MICRO_PYTHON_BUILD_DIR/sdkconfig
+  # cp  \
+  #   $SRC_DIR/sdkconfig \
+  #   $MICRO_PYTHON_BUILD_DIR/sdkconfig
 
   scripts/2_build_the_firmware.sh
 
