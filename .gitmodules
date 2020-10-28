@@ -7,3 +7,6 @@
 [submodule "_ref/M5-Schematic"]
 	path = _ref/M5-Schematic
 	url = https://github.com/m5stack/M5-Schematic.git
+[submodule "_ref/micropython"]
+	path = _ref/micropython
+	url = https://github.com/micropython/micropython.git
